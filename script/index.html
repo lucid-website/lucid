@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucid4L Competitive Team</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="pictures/logo.png" alt="Lucid Studio Logo">
+        <h1>Lucid<br>Studio</h1>
+    </div>
+    <ul>
+        <li class="navli"><a href="#home" onclick="showMainSections()">Home</a></li>
+        <li class="navli"><a href="#videos" onclick="showVideos(event)">Videos</a></li>
+        <li class="navli"><a href="#players" onclick="showMainSections()">Players</a></li>
+        <li class="navli"><a href="#about" onclick="showMainSections()">About Us</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h2>Lucid4L</h2>
+        <a class="btn" href="https://discord.gg/fTxc5mRd">Join Us</a>
+    </div>
+
+    <video autoplay muted loop id="bg-video">
+        <source src="pictures/lucidglock.mp4" type="video/mp4">
+    </video>
+
+    <div id="youtube">
+        <a class="youtube-button" href="https://www.youtube.com/@Lucid4L111">
+            Our Youtube Channel
+        </a>
+    </div>
+</section>
+
+<section class="players" id="players">
+
+    <h2 style="padding-bottom: 20px;">
+        <br> Roster
+    </h2>
+
+    <div class="player-grid">
+
+        <a href="https://www.roblox.com/users/177612492/profile" target="_blank">
+            <div class="card">
+                <img src="pictures/Bartosz.png">
+                <h3>Bartosz</h3>
+                <p>@bartosz230</p>
+            </div>
+        </a>
+
+        <a href="https://www.roblox.com/users/257181/profile" target="_blank">
+            <div class="card">
+                <img src="pictures/Bapo.png">
+                <h3>Bapo</h3>
+                <p>@Seron</p>
+            </div>
+         </a>
+
+         <a href="https://www.roblox.com/users/7061368799/profile" target="_blank">
+            <div class="card">
+                <img src="pictures/1.png">
+                <h3 style="padding-top: 13px;">Nikola</h3>
+                <p>@7dqyz</p>
+            </div>
+        </a>
+
+        <a href="https://www.roblox.com/users/181658842/profile" target="_blank">
+            <div class="card">
+                <img src="pictures/tiny.png">
+                <h3 style="padding-top: 10px;">Standing</h3>
+                <p>@StandingMcdonalds</p>
+            </div>
+        </a>
+
+        <a href="https://www.roblox.com/users/286654801/profile" target="_blank">
+        <div class="card">
+            <img src="pictures/Laterr.png">
+            <h3 style="padding-top: 20px;">Later</h3>
+            <p>@L_aterr</p>
+        </div>
+         </a>
+
+         <a href="https://www.roblox.com/users/436824785/profile" target="_blank">
+            <div class="card">
+                <img src="pictures/Lipe.png">
+                <h3 style="padding-top: 30px;">Lipe</h3>
+                <p>@S_wl</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+
+<section class="video-section" id="videos">
+
+
+
+    <h2 class="centered">Team Highlights</h2>
+    <div class="video-grid">
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=LTFR_T0KUsU" target="_blank" class="video-link-wrapper">
+        
+            <div class="trailer">
+                <img 
+                    src="https://img.youtube.com/vi/LTFR_T0KUsU/hqdefault.jpg" 
+                    class="video-thumb">
+            </div>
+            </a>
+            <div class="video-info">
+                <h3 class="centered">Grace - Apocalypse Rising 2 Montage (Bartosz)</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=zrvpVlvhojs" target="_blank" class="video-link-wrapper">
+                <div class="trailer">
+                    <img src="https://img.youtube.com/vi/zrvpVlvhojs/hqdefault.jpg" class="video-thumb">
+                </div>
+            </a>
+            <div class="video-info">
+                <h3 class="centered">3x falseban - Apocalypse Rising 2 Montage (L_aterr)</h3>
+            </div>
+        </div>
+    </div>
+
+        <div class="video-grid">
+       <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=dEPqFwwjCIE" target="_blank" class="video-link-wrapper">
+                <div class="trailer">
+                    <img src="https://img.youtube.com/vi/dEPqFwwjCIE/hqdefault.jpg" class="video-thumb">
+                </div>
+            </a>
+            <div class="video-info">
+                <h3 class="centered">S_wl - Apocalypse Rising 2 Montage (Lipe)</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=7oBNRO-ZCGI" target="_blank" class="video-link-wrapper">
+        
+            <div class="trailer">
+                <img 
+                    src="https://img.youtube.com/vi/7oBNRO-ZCGI/hqdefault.jpg" 
+                    class="video-thumb">
+            </div>
+            </a>
+            <div class="video-info">
+                <h3 class="centered">Transportin' - Apocalypse Rising 2 Montage (Bartosz)</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="about">
+    <h1 id="faq">About Us</h1>
+
+    <div id="faqtext">
+        <br>
+        Lucid was founded in mid-2024 by Bapo, who entered the AR2 community from AR1 and connected with key players including Beast, M107onetap, and Malt. <p class="textt">
+            <br>
+        With a shared vision, Bapo proposed the creation of Lucid an idea that quickly gained support. <p class="textt">
+            <br>
+        Soon after, M107onetap introduced Bartosz230, who stepped up as the Team Leader, while Bapo took on the role of Team Director.<p class="textt">
+            <br>
+        From those beginnings, Lucid has grown into a competitive and recognized team. <p class="textt">
+            <br>
+        ACHIEVEMENTS <p class="textt">
+        24–25 HTC Winter Champions <p class="textt">
+        25–26 Winter Champions <p class="textt">
+        DPI Finalists <p class="textt">
+        16 Sub-Tournament Wins <p class="textt">
+        Total Robux Earned: 75,000 R$<p class="textt">
+            <br>
+        LUCID LEGENDS <p class="textt">
+        Bapo – Founder <p class="textt">
+        Bartosz230 – Team Leader <p class="textt">
+        Standing - Secretary <p class="textt">
+        Benempted  <p class="textt">
+        L_aterr <p class="textt">
+            <br>
+        With recent members like Lipe and Nikola we are building a strong community, and continuing to push Lucid on top. <p class="textt">
+            <br>
+            JOIN THE LEGACY
+            Lucid isn’t just a team, it’s a movement. <p class="textt">
+            Stay tuned. Stay sharp. Stay Lucid. <p class="textt">
+    </div>
+</section>
+
+
+<script src="script/script.js"></script>
+</body>
+</html>
