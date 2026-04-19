@@ -14,12 +14,11 @@
         <img src="pictures/logo.png" alt="Lucid Studio Logo">
         <h1>Lucid<br>Studio</h1>
     </div>
-
     <ul>
-        <li class="navli"><a href="#" onclick="showHome(); return false;">Home</a></li>
-        <li class="navli"><a href="#" onclick="showVideos(); return false;">Videos</a></li>
-        <li class="navli"><a href="#" onclick="showPlayers(); return false;">Players</a></li>
-        <li class="navli"><a href="#" onclick="showAbout(); return false;">About Us</a></li>
+        <li class="navli"><a href="#home" onclick="showMainSections()">Home</a></li>
+        <li class="navli"><a href="#videos" onclick="showVideos(event)">Videos</a></li>
+        <li class="navli"><a href="#players" onclick="showMainSections()">Players</a></li>
+        <li class="navli"><a href="#about" onclick="showMainSections()">About Us</a></li>
     </ul>
 </nav>
 
@@ -29,10 +28,15 @@
         <a class="btn" href="https://discord.gg/fTxc5mRd">Join Us</a>
     </div>
 
+    <video autoplay muted loop id="bg-video">
+        <source src="pictures/lucidglock.mp4" type="video/mp4">
+    </video>
+
     <div id="youtube">
         <a class="youtube-button" href="https://www.youtube.com/@Lucid4L111">
             Our Youtube Channel
         </a>
+    </div>
 </section>
 
 <section class="players" id="players">
@@ -45,7 +49,7 @@
 
         <a href="https://www.roblox.com/users/177612492/profile" target="_blank">
             <div class="card">
-                <img src="../pictures/Bartosz.png">
+                <img src="pictures/Bartosz.png">
                 <h3>Bartosz</h3>
                 <p>@bartosz230</p>
             </div>
@@ -53,15 +57,15 @@
 
         <a href="https://www.roblox.com/users/257181/profile" target="_blank">
             <div class="card">
-                <img src="../pictures/Bapo.png">
+                <img src="pictures/Bapo.png">
                 <h3>Bapo</h3>
                 <p>@Seron</p>
-                </div>
+            </div>
          </a>
 
          <a href="https://www.roblox.com/users/7061368799/profile" target="_blank">
             <div class="card">
-                <img src="../pictures/1.png">
+                <img src="pictures/1.png">
                 <h3 style="padding-top: 13px;">Nikola</h3>
                 <p>@7dqyz</p>
             </div>
@@ -69,7 +73,7 @@
 
         <a href="https://www.roblox.com/users/181658842/profile" target="_blank">
             <div class="card">
-                <img src="../pictures/tiny.png">
+                <img src="pictures/tiny.png">
                 <h3 style="padding-top: 10px;">Standing</h3>
                 <p>@StandingMcdonalds</p>
             </div>
@@ -77,7 +81,7 @@
 
         <a href="https://www.roblox.com/users/286654801/profile" target="_blank">
         <div class="card">
-            <img src="../pictures/Laterr.png">
+            <img src="pictures/Laterr.png">
             <h3 style="padding-top: 20px;">Later</h3>
             <p>@L_aterr</p>
         </div>
@@ -85,7 +89,7 @@
 
          <a href="https://www.roblox.com/users/436824785/profile" target="_blank">
             <div class="card">
-                <img src="../pictures/Lipe.png">
+                <img src="pictures/Lipe.png">
                 <h3 style="padding-top: 30px;">Lipe</h3>
                 <p>@S_wl</p>
             </div>
@@ -100,39 +104,26 @@
 
     <h2 class="centered">Team Highlights</h2>
     <div class="video-grid">
-        <div class="video-card" onmouseenter="playVideo('trailer1')" onmouseleave="pauseVideo('trailer1')">
-            <a href="https://www.youtube.com/watch?v=OC2aK0pAEXM" target="_blank" class="video-link-wrapper">
-                <div class="trailer">
-                    <iframe 
-                        id="trailer1"
-                        width="100%" height="415" 
-                        src="https://www.youtube-nocookie.com/embed/OC2aK0pAEXM?enablejsapi=1&mute=1"
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=LTFR_T0KUsU" target="_blank" class="video-link-wrapper">
+        
+            <div class="trailer">
+                <img 
+                    src="https://img.youtube.com/vi/LTFR_T0KUsU/hqdefault.jpg" 
+                    class="video-thumb">
+            </div>
             </a>
             <div class="video-info">
-                <h3 class="centered">Silly Watch - Apocalypse Rising 2 Montage (Bartosz)</h3>
+                <h3 class="centered">Grace - Apocalypse Rising 2 Montage (Bartosz)</h3>
             </div>
         </div>
     </div>
 
     <div class="video-grid">
-        <div class="video-card" onmouseenter="playVideo('trailer1')" onmouseleave="pauseVideo('trailer1')">
+        <div class="video-card">
             <a href="https://www.youtube.com/watch?v=zrvpVlvhojs" target="_blank" class="video-link-wrapper">
                 <div class="trailer">
-                    <iframe 
-                        id="trailer1"
-                        width="100%" height="415" 
-                        src="https://www.youtube-nocookie.com/embed/zrvpVlvhojs?enablejsapi=1&mute=1" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <img src="https://img.youtube.com/vi/zrvpVlvhojs/hqdefault.jpg" class="video-thumb">
                 </div>
             </a>
             <div class="video-info">
@@ -142,28 +133,33 @@
     </div>
 
         <div class="video-grid">
-        <div class="video-card" onmouseenter="playVideo('trailer1')" onmouseleave="pauseVideo('trailer1')">
+       <div class="video-card">
             <a href="https://www.youtube.com/watch?v=dEPqFwwjCIE" target="_blank" class="video-link-wrapper">
                 <div class="trailer">
-                    <iframe 
-                        id="trailer1"
-                        width="100%" height="415" 
-                        src="https://www.youtube-nocookie.com/embed/dEPqFwwjCIE?enablejsapi=1&mute=1" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                    <img src="https://img.youtube.com/vi/dEPqFwwjCIE/hqdefault.jpg" class="video-thumb">
                 </div>
             </a>
             <div class="video-info">
-                <h3 class="centered"> S_wl - Apocalypse Rising 2 Montage (Lipe) </h3>
+                <h3 class="centered">S_wl - Apocalypse Rising 2 Montage (Lipe)</h3>
             </div>
         </div>
     </div>
 
-
-    
+    <div class="video-grid">
+        <div class="video-card">
+            <a href="https://www.youtube.com/watch?v=7oBNRO-ZCGI" target="_blank" class="video-link-wrapper">
+        
+            <div class="trailer">
+                <img 
+                    src="https://img.youtube.com/vi/7oBNRO-ZCGI/hqdefault.jpg" 
+                    class="video-thumb">
+            </div>
+            </a>
+            <div class="video-info">
+                <h3 class="centered">Transportin' - Apocalypse Rising 2 Montage (Bartosz)</h3>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -175,37 +171,37 @@
 
     <div id="faqtext">
         <br>
-        Lucid was founded in mid-2024 by Bapo, who entered the AR2 community from AR1 and connected with key players including Beast, M107onetap, and Malt. <p>
+        Lucid was founded in mid-2024 by Bapo, who entered the AR2 community from AR1 and connected with key players including Beast, M107onetap, and Malt. <p class="textt">
             <br>
-        With a shared vision, Bapo proposed the creation of Lucid an idea that quickly gained support. <p>
+        With a shared vision, Bapo proposed the creation of Lucid an idea that quickly gained support. <p class="textt">
             <br>
-        Soon after, M107onetap introduced Bartosz230, who stepped up as the Team Leader, while Bapo took on the role of Team Director.<p>
+        Soon after, M107onetap introduced Bartosz230, who stepped up as the Team Leader, while Bapo took on the role of Team Director.<p class="textt">
             <br>
-        From those beginnings, Lucid has grown into a competitive and recognized team. <p>
+        From those beginnings, Lucid has grown into a competitive and recognized team. <p class="textt">
             <br>
-        ACHIEVEMENTS <p>
-        24–25 HTC Winter Champions <p>
-        25–26 Winter Champions <p>
-        DPI Finalists <p>
-        16 Sub-Tournament Wins <p>
-        Total Robux Earned: 115,000 R$<p>
+        ACHIEVEMENTS <p class="textt">
+        24–25 HTC Winter Champions <p class="textt">
+        25–26 Winter Champions <p class="textt">
+        DPI Finalists <p class="textt">
+        16 Sub-Tournament Wins <p class="textt">
+        Total Robux Earned: 75,000 R$<p class="textt">
             <br>
-        LUCID LEGENDS <p>
-        Bapo – Founder <p>
-        Bartosz230 – Team Leader <p>
-        Standing - Secretary <p>
-        Benempted  <p>
-        L_aterr <p>
+        LUCID LEGENDS <p class="textt">
+        Bapo – Founder <p class="textt">
+        Bartosz230 – Team Leader <p class="textt">
+        Standing - Secretary <p class="textt">
+        Benempted  <p class="textt">
+        L_aterr <p class="textt">
             <br>
-        With recent members like Lipe and Nikola we are building a strong community, and continuing to push Lucid on top. <p>
+        With recent members like Lipe and Nikola we are building a strong community, and continuing to push Lucid on top. <p class="textt">
             <br>
             JOIN THE LEGACY
-            Lucid isn’t just a team, it’s a movement. <p>
-            Stay tuned. Stay sharp. Stay Lucid. <p>
+            Lucid isn’t just a team, it’s a movement. <p class="textt">
+            Stay tuned. Stay sharp. Stay Lucid. <p class="textt">
     </div>
 </section>
 
 
-<script type="module" src="script/script.js"></script>
+<script src="script/script.js"></script>
 </body>
 </html>
